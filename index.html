@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="./css/master.css">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+    <title>Word Clock</title>
+  </head>
+  <body>
+    <div class="header">
+      <div id="progress"></div>
+      <input type="time" id="setTime" />
+      <input type="submit" value="set time" onClick="changed()"/>
+    </div>
+
+		<div id="clock">
+			<span class="word on">It</span>
+			<span class="word nbsp"></span>
+			<span class="word on">is</span>
+			<span class="word nbsp"></span>
+			<span class="word" id="m_20">twenty</span>
+			<br />
+			<span class="word" id="m_15">quarter</span>
+			<span class="word nbsp"></span>
+			<span class="word" id="m_30">half</span>
+			<br />
+			<span class="word" id="m_10">ten</span>
+			<span class="word" id="m_5">five</span>
+			<span class="word nbsp"></span>
+			<span class="word" id="past">past</span>
+			<br />
+			<span class="word" id="to">to</span>
+			<span class="word nbsp"></span>
+			<span class="word" id="h_0">twelve</span>
+			<span class="word" id="h_1">one</span>
+			<br />
+			<span class="word" id="h_2">two</span>
+			<span class="word" id="h_3">three</span>
+			<span class="word" id="h_4">four</span>
+			<br />
+			<span class="word" id="h_5">five</span>
+			<span class="word" id="h_6">six</span>
+			<span class="word" id="h_7">seven</span>
+			<br />
+			<span class="word" id="h_8">eight</span>
+			<span class="word" id="h_9">nine</span>
+			<span class="word" id="h_10">ten</span>
+			<br />
+			<span class="word nbsp"></span>
+			<span class="word nbsp"></span>
+			<span class="word nbsp"></span>
+			<span class="word" id="h_11">eleven</span>
+			<span class="word nbsp"></span>
+			<span class="word nbsp"></span>
+			<span class="word nbsp"></span>
+			<br />
+			<span class="word nbsp"></span>
+			<span class="word" id="m_0">O'Clock</span>
+			<span class="word nbsp"></span>
+			<span class="word on">now</span>
+  </body>
+</html>

@@ -1,1 +1,1 @@
-# spellClock-js
+# JavaScript word clock 
