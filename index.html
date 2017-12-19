@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nunito" rel="stylesheet">
     <link rel="stylesheet" href="./css/master.css">
     <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./js/main.js"></script>
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
     <title>Word Clock</title>
   </head>
   <body>
     <div class="header">
-      <div id="progress"></div>
       <input type="time" id="setTime" />
-      <input type="submit" value="set time" onClick="changed()"/>
+      <button type="submit" onClick="changed()">set time</button>
     </div>
 
 		<div id="clock">

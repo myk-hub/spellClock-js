@@ -1,54 +1,40 @@
 body {
   background-color: #9DD4DF;
   font-family: "Nunito", Monaco, monospace;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .header {
   text-align: center;
-  margin: 0 30% 0 30%;
+  margin: 0 25% 0 25%;
   background-color: #E55C53;
-  box-sizing: border-box;
   border-top-left-radius:  1.4em;
   border-top-right-radius: 1.4em;
-  padding: 1px 0 1px 0;
 }
 
 input[type="time"] {
-  box-sizing: border-box;
-  width: 50%;
-  margin: 0 auto;
-  padding: 1em 1em 1em 1em;
+  width: 35%;
+  padding: 1.5em 1.5em 1.5em 1.5em;
   font-size: 2.7vh;
+  color: white;
   border: none;
   background-color: #E55C53;
   border-radius: 1vh;
   outline: none;
 }
 
-input[type="submit"] {
+button {
+  font-family: "Nunito", Monaco, monospace;
+  font-size : 2vh;
   height: 3em;
+  padding: 10px;
   background-color: #4285F4;
   color: white;
   border: none;
   border-radius: 0.3em;
   cursor: pointer;
-  font-size: 0.875em;
   margin-top: 2em;
-  width: 15%;
-}
-
-#progress {
-	width: 100%;
-	height: 2px;
-	display: none;
-
-	position: fixed;
-	top: 0;
-	left: 0;
-
-	background: red;
-	box-shadow: 1px 2px 3px red;
+  width: 30%;
 }
 
 #clock {
@@ -58,12 +44,12 @@ input[type="submit"] {
   background-color: #FEFEFE;
   border-radius: 0.4em;
   margin: 0 auto;
-  font-size: 3vh;
+  font-size: 2.6vh;
 	text-align: center;
 	display: block;
 	background: #FBE9E7;
 	color: blue;
-	font-family: 'Courier New', monospace;
+	font-family: 'Indie Flower', cursive;
 	word-spacing: -1.1em;
 	letter-spacing: .5em;
 	white-space: nowrap;
@@ -73,14 +59,21 @@ input[type="submit"] {
 	text-transform: uppercase;
 	font-size: 1.9em;
 	word-spacing: 0em;
-
 	opacity: .1;
-
 	transition: all 3s;
 }
 
 #clock > .word.on {
 	opacity: 1;
 	color: #4285F4;
-	/*text-shadow: 0 0 1px #6bf;*/
+}
+
+@media only screen and (max-width: 500px) {
+    #clock > .word {
+      font-size: 1.5em;
+    }
+
+    .header {
+      margin: 0 6% 0 6%;
+    }
 }
